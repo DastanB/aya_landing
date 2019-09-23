@@ -1,0 +1,576 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}AYA | Образовательный центр{% endblock %}
+
+
+{% block content %}
+<div class="nav-container">
+    <div class="position-absolute navbar-dark" data-sticky="top">
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg align-items-center">
+                <a class="navbar-brand" href="/">
+                    <img alt="Образовательный центр AYA" src=" {% static 'assets/img/logo.svg' %}" />
+                </a>
+                <div class="col-12 col-lg-auto order-lg-2 d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon-menu h4"></i>
+                    </button>
+                </div>
+                <!--end of col-->
+                <div class="col-12 col-lg order-lg-1">
+                    <div class="collapse navbar-collapse navbar-toggle">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#contacts" class="nav-link">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#akcii" class="nav-link">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#graph" class="nav-link">График занятий</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#unas" class="nav-link">У нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end of col-->
+                <div class="col-12 col-lg order-lg-3">
+                    <div class="collapse navbar-collapse navbar-toggle justify-content-end">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="application.html" class="btn btn-success">Подать заявку</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--end of col-->
+            </nav>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </div>
+</div>
+
+<div class="main-container">
+    <section class="height-80 bg-dark text-white">
+        <img alt="Образовательный центр Алматы" src="{% static 'assets/img/AYA_BACKGROUND.jpg' %}" class="bg-image opacity-60" />
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-7 text-center">
+                    <h1 class="display-3">Начни, сейчас!</h1>
+                    <span class="lead">
+                        Образовательный центр "АÝА" даст возможность стать лучше!
+                    </span>
+                    <a href="application.html" class="btn btn-success btn-lg">Подать заявку</a>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+    <section class="space-lg">
+        <div class="container">
+            <ul class="feature-list feature-list-xlg">
+                <li class="row align-items-center justify-content-around">
+                    <div class="col-12 col-md-6 order-md-2">
+                        <img alt="Подготовка в РФМШ, НИШ, КТЛ(БИЛ) и 165 лицей" class="img-fluid rounded" src="{% static 'assets/img/AidanaAYA.jpg' %}" />
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-md-1">
+                        <h3 class="h1">Подготовка в РФМШ, НИШ, КТЛ(БИЛ) и 165 лицей</h3>
+                        <p class="lead">
+                            Подготовка в лучшие школы Алматы является основным направлением нашего центра.
+                        </p>
+                        <a href="#graph">График занятий &rsaquo;</a>
+                    </div>
+                    <!--end of col-->
+                </li>
+                <!--end of row-->
+                <li class="row align-items-center justify-content-around">
+                    <div class="col-12 col-md-6 order-1">
+                        <img alt="Подготовка к ЕНТ И КТА" class="img-fluid rounded" src="{% static 'assets/img/ChinaAYA.jpg' %}" />
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-2">
+                        <h3 class="h1">Подготовка к ЕНТ И КТА</h3>
+                        <p class="lead">
+                            Отличная статистика по набранным баллам на тестировании!
+                        </p>
+                        <a href="#graph">График занятий &rsaquo;</a>
+                    </div>
+                    <!--end of col-->
+                </li>
+                <!--end of row-->
+                <li class="row align-items-center justify-content-around">
+                    <div class="col-12 col-md-6 order-md-2">
+                        <img alt="Вечерние курсы" class="img-fluid rounded" src="{% static 'assets/img/KBTUAYA.jpg' %}" />
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-md-1">
+                        <h3 class="h1">Вечерние курсы</h3>
+                        <p class="lead">
+                            Никогда непоздно научиться чему-то новому.
+                        </p>
+                        <a href="#graph">График занятий &rsaquo;</a>
+                    </div>
+                    <!--end of col-->
+                </li>
+                <!--end of row-->
+                <li class="row align-items-center justify-content-around">
+                    <div class="col-12 col-md-6 order-1">
+                        <img alt="Онлайн курсы" class="img-fluid rounded" src="{% static 'assets/img/AidaAYA.jpg' %}" />
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-2">
+                        <h3 class="h1">Онлайн курсы</h3>
+                        <p class="lead">
+                            Просто имея доступ к интернуту, вы можете проходить наши курсы не выходя из дома. 
+                        </p>
+                        <a href="#graph">График занятий &rsaquo;</a>
+                    </div>
+                    <!--end of col-->
+                </li>
+            </ul>
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+    <section class="bg-gradient text-white space-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="media">
+                        <img alt="Образовательный центр в Алматы" src="{% static 'assets/img/Seneka2.jpg' %}" class="avatar avatar-lg" />
+                        <div class="media-body">
+                            <p class="h2">
+                                “Обучая других, мы учимся сами!”
+                            </p>
+                            <span>Луций Анней Сенека</span>
+                        </div>
+                    </div>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+    <section id='akcii'>
+        <div class="container">
+            <div class="row align-items-center justify-content-between section-intro">
+                <div class="col-12 col-lg-5 text-center text-lg-left section-intro">
+                    <h3 class="display-4">Акции!</h3>
+                    <span class="lead">
+                        Мы заоботимся не только о своих учениках, но об их родителях, поэтому мы установили гибкую систему скидок.
+                    </span>
+                </div>
+                <!--end of col-->
+                <div class="col-12 col-lg-6 row no-gutters card-group">
+                    <div class="card pricing card-lg bg-dark col-lg-6">
+                        <div class="card-body">
+                            <h5>Танос</h5>
+                            <span class="display-3">-10%</span>
+                            <span class="text-small">скидка / в месяц</span>
+                            <span class="h6">Включает в себя:</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    10% скидка за
+                                    каждый последующий 
+                                    предмет на все время обучения
+                                </li>
+                            </ul>
+                            <a href="application.html" class="btn btn-lg btn-success">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <!--end card-->
+                    <div class="card pricing card-lg col-lg-6">
+                        <div class="card-body">
+                            <h5>Бинарное дерево</h5>
+                            <span class="display-3">-10%</span>
+                            <span class="text-small">скидка / на один месяц</span>
+                            <span class="h6">Включает в себя:</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    10% скидка за каждого приведенного вами клиента на первый месяц
+                                </li>
+                            </ul>
+                            <a href="application.html" class="btn btn-lg btn-outline-primary">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+
+    <section id='graph'>
+        <div class="container">
+            <div class="row justify-content-center text-center section-intro">
+                <div class="row justify-content-center text-center section-intro">
+                    <div class="col-12 col-md-9 col-lg-8">
+                        <h2 class="display-4">График групповых занятий</h2>
+                        <span class="lead">Убедительная просьба, для уточнения нашей ценовой политики обращаться по указанному номеру или оставьте заявку и мы вам перезвоним.</span>
+    
+                    </div>
+                    <!--end of col-->
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+            <div class="row justify-content-center mb-5">
+                <div class="col-auto">
+                    <nav class="nav btn-group" role="tablist">
+                        <a href="#packets" class="btn btn-lg btn-outline-primary active" id="packets-tab" data-toggle="tab" aria-controls="pricing-monthly">Пакеты услуг</a>
+                        <a href="#graphics" class="btn btn-lg btn-outline-primary" id="graphics-tab" data-toggle="tab" aria-controls="pricing-yearly">График занятий</a>
+                    </nav>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="packets" role="tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>НИШ</h5>
+                                    <span class="display-4 price-collapse collapse show"><s>85000KZT</s></span>
+                                    <span class="display-4 price-collapse collapse show">65000KZT</span>
+                                 
+                                    <span class="h6">Включает в себя:</span>
+                                    <ul class="list-unstyled">
+                                        <li class="h5">
+                                            Математика и Логика
+                                        </li>
+                                        <li class="h5">
+                                            Казахский язык
+                                        </li>
+                                        <li class="h5">
+                                            Русский язык
+                                        </li>
+                                        <li class="h5">
+                                            Английский язык
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>Конструктор</h5>
+                                    
+                                    <span class="display-4">Соберите свой пакет</span>
+                                    <span class="h5">Вы можете</span>
+                                    
+                                    <ul class="list-unstyled">
+                                        <li class="h5">
+                                            Собрать ваши желаемые предметы
+                                        </li>
+                                        <li class="h5">
+                                            со скидкой
+                                        </li>
+                                        <li class="h5">
+                                            по удобному расписанию 
+                                        </li>
+                                        <li class="h5">
+                                            для вас
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end of col-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>БИЛ</h5>
+                                    <span class="display-4 price-collapse collapse show"><s>65000KZT</s></span>
+                                    <span class="display-4 price-collapse collapse show">45000KZT</span>
+                                    <span class="h6">Включает в себя:</span>
+                                    <ul class="list-unstyled">
+                                        <li class="h5">
+                                            Математика
+                                        </li>
+                                        <li class="h5">
+                                            Логика
+                                        </li>
+                                        <li class="h5">
+                                            Казахский язык
+                                        </li>
+                                        <li class="h5">
+                                            Английский язык
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end of col-->
+                        
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <div class="tab-pane fade" id="graphics" role="tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>Математика</h5>
+                                    <span class="display-3 price-collapse collapse show">1.5ч</span>
+                                    <span class="text-small">3 раза / в неделю</span>
+                                    <span class="h6">Итого 18 часов в месяц</span>
+                                    <ul class="list-unstyled">
+                                            <li>
+                                                Алгебра
+                                            </li>
+                                            <li>
+                                                Геометрия
+                                            </li>
+                                            <li>
+                                                Логика
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end of col-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>Физика</h5>
+                                    <span class="display-3 price-collapse collapse show">1.5ч</span>
+                                    <span class="text-small">3 раза / в неделю</span>
+                                    <span class="h6">Итого 18 часов в месяц</span>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            Классическая
+                                        </li>
+                                        <li>
+                                            Квантовая
+                                        </li>
+                                        <li>
+                                            Атомная 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end of col-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card pricing card-lg">
+                                <div class="card-body">
+                                    <h5>Языки</h5>
+                                    <span class="display-3 price-collapse collapse show">1ч</span>
+                                    <span class="text-small">3 раза / в неделю</span>
+                                    <span class="h6">Итого 12 часов в месяц</span>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            Казахский
+                                        </li>
+                                        <li>
+                                            Русский
+                                        </li>
+                                        <li>
+                                            Английский
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end of col-->
+                            
+                   
+                    <!--end of row-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                
+                
+            </div>
+            <!--end of tab content-->
+            
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section class="bg-dark space-lg">
+        <img alt="Image" src="{% static 'assets/img/graphic-bg-clouds-2.png' %}" class="bg-image" />
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="media">
+                        <img alt="Образовательный центр Алматы" src="{% static 'assets/img/LOGOINSTA.jpeg' %}" class="avatar avatar-lg" />
+                        <div class="media-body">
+                            <p class="h2">
+                                <a href="https://www.instagram.com/aua_edu_kz/">@aua_qazaqstan</a>
+                            </p>
+                            <p class="h2">Cледите за нами в Instagram!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    <section class="space-lg" >
+        <div class="container">
+            <ul class="feature-list feature-list-xlg">
+                <li class="row align-items-center justify-content-around" id="unas">
+                    <div class="col-12 col-md-6 order-1">
+                        <img alt="Образовательный центр Алматы" class="img-fluid rounded" src="{% static 'assets/img/AYA_CLASSROOM.jpg' %}" />
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-2">
+                        <i class="icon-fingerprint display-4"></i>
+                        <h3 class="h1">У нас в центре:</h3>
+                        <ul class="list-unstyled list-spacing-sm">
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Вы можете окунуться в прекрасную дружескую атмосферу!</div>
+                            </li>
+                            <li class="row align-items-center">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Индивидуальный и современный подход к каждому ученику!</div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Каждое воскресенье проводятся тестирование по программе обучения и после их ждет развлекательная программа! </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Своя уникальная методика обучения!</div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Мы делимся не только знаниями, но и жизненным опытом.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="row align-items-center justify-content-around" id="contacts">
+                    <div class="col-12 col-md-6 order-md-2" >
+                        <img class="img-fluid rounded">
+                        <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038664131/center/76.8907141685486,43.23960679028051/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>
+                        <div class="dg-widget-link">
+                            <a href="http://2gis.kz/almaty/firm/70000001038664131/photos/70000001038664131/center/76.8907141685486,43.23960679028051/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a>
+                            </div>
+                            <div class="dg-widget-link">
+                                <a href="http://2gis.kz/almaty/center/76.890704,43.239322/zoom/16/routeTab/rsType/bus/to/76.890704,43.239322╎Ауа, образовательный центр?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Ауа, образовательный центр</a>
+                            </div>
+                            <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                            <script charset="utf-8">
+                                new DGWidgetLoader({
+                                    width: '100%', 
+                                    height: 50,
+                                    "borderColor":"#a3a3a3",
+                                    "pos":{"lat":43.23960679028051,"lon":76.8907141685486,"zoom":16},
+                                    "opt":{"city":"almaty"},
+                                    "org":[{"id":"70000001038664131"}]
+                                });
+                            </script>
+                            <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                        
+                        </img>
+                        
+                    </div>
+                    <!--end of col-->
+                    <div class="col-12 col-md-6 col-lg-5 text-lg-center order-md-1" >
+                        <h3 class="h1">Контакты:</h3>
+                        <ul class="list-unstyled list-spacing-sm">
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Наш адрес: Абая 155(уг. ул.Розыбакиева) 26 офис</div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Сотовый телефон: +7(707)-406-4879</div>
+                                <div class="col-10">+7(777)-019-0064</div>
+                                <div class="col-10">+7(776)-824-9873</div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2 col-md-1"><i class="icon-check h5"></i>
+                                </div>
+                                <div class="col-10">Режим работы: с ПН - СБ 09:00-19:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end of col-->
+                </li>
+                <!--end of row-->
+                
+            </ul>
+        </div>
+        <!--end of container-->
+    </section>
+    
+    <section class="bg-gradient p-0 text-white">
+        <svg class="decorative-divider" preserveAspectRatio="none" viewbox=" 0 0 100 100">
+            <polygon fill="#F8F9FB" points="0 0 100 0 100 100"></polygon>
+        </svg>
+        <div class="container space-lg">
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="h1">Оставьте номер в заявке или позвоните когда пожелаете и назначьте пробный, БЕСПЛАТНЫЙ УРОК в удобное для вас время!</h3>
+                    <a href="application.html" class="btn btn-success">Подать заявку</a>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+    <footer class="bg-gray text-light footer-long">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p class="text-muted">
+                     
+                    </p>
+                </div>
+                <!--end of col-->
+                <div class="col-12 col-md-9">
+                    <span class="h5">Хотите такой же сайт? Звоните, пишите на +7(777)-210-7915</span>
+            
+                    <!--end of row-->
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </footer>
+</div>
+
+{% endblock %}

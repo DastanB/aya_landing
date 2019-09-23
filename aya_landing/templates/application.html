@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}AYA | Оставьте заявку{% endblock %}
+
+
+{% block content %}
+
+<div class="nav-container">
+</div>
+<div class="main-container">
+    <section class="fullwidth-split">
+        <div class="container-fluid">
+            <div class="row no-gutters height-100 justify-content-center">
+                <div class="col-12 col-lg-6 fullwidth-split-image bg-dark d-flex justify-content-center align-items-center">
+                    <img alt="Образовательный центр Алматы" src="{% static 'assets/img/photo-man-diary.jpg' %}" class="bg-image position-absolute opacity-30" />
+                    <div class="col-12 col-sm-8 col-lg-9 text-center pt-5 pb-5">
+                        <img alt="Image" src="{% static 'assets/img/logo2.svg' %}" class="mb-4 logo-lg" />
+                        <span class="h3 mb-5">Человек в знаниях нуждается также, как в воздухе!</span>
+
+
+                    </div>
+                    <!--end of col-->
+                </div>
+                <!--end of col-->
+                <div class="col-12 col-sm-8 col-lg-6 fullwidth-split-text">
+                    <div class="col-12 col-lg-8 align-self-center">
+                        <div class="text-center mb-5">
+                            <h1 class="h2 mb-2">Начните сейчас!</h1>
+                            <span>Оставьте заявку и мы вам перезвоним.</span>
+                        </div>
+                        <form class="mb-4" method="POST" action="thanks">
+                            {% csrf_token %}
+                            
+                            <div class="form-group">
+                                <label for="signup-email">ФИО</label>
+                                <input class="form-control form-control-lg" type="text" name="fio" id="signup-email" placeholder="ФИО" />
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Ваш телефон</label>
+                                <input class="form-control form-control-lg" type="tel" name="phone_number" id="signup-password" placeholder="Сотовый телефон" />
+                                <small></small>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-lg btn-success">Подать заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--end of col-->
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--end of section-->
+</div>
+{% endblock %}
