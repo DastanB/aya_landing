@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name="index.html")),
     path('application.html', TemplateView.as_view(template_name='application.html')),
-    path('thanks', views.get_application, name="get_application")    
+    path('thanks', views.get_application, name="get_application"),
+    path('robots.txt', TemplateView.as_view(template_name='robots.txt')),
+    path('sitemap.xml', TemplateView.as_view(template_name='sitemap.xml')),
 ]
