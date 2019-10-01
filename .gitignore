@@ -1,1 +1,8 @@
 myvenv/
+*.py[co]
+*.sqlite3
+.env
+__pycache__
+.idea/
+.vscode/
+public/
