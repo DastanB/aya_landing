@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'i@ghopic8k6(xu))wv_ssxe&yo+^xbb7_ln$9e8)pbo-t#%*=2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['167.99.53.43', 'localhost']
+ALLOWED_HOSTS = ['167.99.53.43', 'localhost', 'aua-qazaqstan.com']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'aya.edu.kz@gmail.com'
